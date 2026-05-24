@@ -117,9 +117,8 @@
         /* Footer */
         .footer{border-top:1px solid var(--border);padding:24px 0;text-align:center;color:var(--t3);font-size:.75rem}
 
-        /* Animate */
-        .fade{opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease}
-        .fade.vis{opacity:1;transform:translateY(0)}
+        /* Animate - no JS dependency */
+        .fade{opacity:1;transform:none}
 
         .section-alt{background:var(--card)}
     </style>
@@ -348,8 +347,7 @@
         const s=(t)=>{document.documentElement.setAttribute('data-theme',t);localStorage.setItem('theme',t);document.getElementById('tb').textContent=t==='dark'?'☀️':'🌙'};
         s(t());toggle=()=>s(document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark');
         go=(id)=>{document.getElementById(id)?.scrollIntoView({behavior:'smooth'});document.getElementById('nav')?.classList.remove('open')};
-        const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')});},{threshold:.1,rootMargin:'0px 0px -30px 0px'});
-        document.querySelectorAll('.fade').forEach(el=>obs.observe(el));
+        // Content visible by default
     </script>
 </body>
 </html>
