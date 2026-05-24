@@ -20,11 +20,11 @@
         ::selection{background:var(--accent);color:#fff}
         a{color:var(--accent-t);text-decoration:none;transition:color var(--tr)}
         a:hover{color:var(--accent-h)}
-        .container{max-width:1000px;margin:0 auto;padding:0 20px}
+        .container{max-width:1000px;margin:0 auto;padding:0 32px}
 
         /* Nav */
         .nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--nav-bg);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);transition:background var(--tr)}
-        .nav-inner{max-width:1000px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:56px}
+        .nav-inner{max-width:1000px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:56px}
         .nav-logo{font-weight:800;font-size:1.15rem;cursor:pointer;color:var(--t1)}.nav-logo span{color:var(--accent)}
         .nav-links{display:flex;align-items:center;gap:4px}
         .nav-links a{color:var(--t2);font-size:.8rem;font-weight:500;padding:5px 12px;border-radius:99px;transition:all var(--tr)}
@@ -38,7 +38,7 @@
         .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--hero-g);position:relative;overflow:hidden}
         .hero::before{content:'';position:absolute;top:-40%;right:-25%;width:500px;height:500px;background:var(--glow);border-radius:50%;filter:blur(100px);animation:pulse 6s ease-in-out infinite;pointer-events:none}
         @keyframes pulse{0%,100%{opacity:.5;transform:scale(1)}50%{opacity:.8;transform:scale(1.1)}}
-        .hero-content{position:relative;text-align:center;max-width:640px;padding:0 20px}
+        .hero-content{position:relative;text-align:center;max-width:640px;padding:0 32px}
         .hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--accent-s);border:1px solid var(--border);padding:5px 14px;border-radius:99px;font-size:.75rem;font-weight:500;color:var(--accent-t);margin-bottom:20px}
         .hero-badge .dot{width:6px;height:6px;background:#22c55e;border-radius:50%;animation:blink 2s infinite}
         @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
@@ -332,15 +332,13 @@
             <div class="title">Contato</div>
             <div class="desc" style="margin:8px auto 28px;text-align:center">Aberto a oportunidades remotas e híbridas.</div>
             <div class="contacts fade">
-                <a href="mailto:rodney.silva.dev@gmail.com" class="ct"><div class="ct-i">📧</div><div><div class="ct-label">Email</div><div class="ct-val">rodney.silva.dev@gmail.com</div></div></a>
-                <a href="https://www.linkedin.com/in/rodneycarmo" target="_blank" class="ct"><div class="ct-i">💼</div><div><div class="ct-label">LinkedIn</div><div class="ct-val">rodneycarmo</div></div></a>
-                <a href="tel:+5511992847777" class="ct"><div class="ct-i">📱</div><div><div class="ct-label">Telefone</div><div class="ct-val">(11) 99284-7777</div></div></a>
-                <div class="ct"><div class="ct-i">📍</div><div><div class="ct-label">Local</div><div class="ct-val">São Paulo, SP</div></div></div>
+                <a href="https://www.linkedin.com/in/rodneycarmo" target="_blank" class="ct"><div class="ct-i">💼</div><div><div class="ct-label">LinkedIn</div><div class="ct-val">linkedin.com/in/rodneycarmo</div></div></a>
+                <a href="https://github.com/rodneysilva" target="_blank" class="ct"><div class="ct-i">🐙</div><div><div class="ct-label">GitHub</div><div class="ct-val">github.com/rodneysilva</div></div></a>
             </div>
         </div>
     </section>
 
-    <footer class="footer"><div class="container">© 2024 Rodney Silva. <a href="https://github.com/rodneysilva" target="_blank">GitHub</a></div></footer>
+    <footer class="footer"><div class="container">© 2026 Rodney Silva. <a href="https://github.com/rodneysilva" target="_blank">GitHub</a></div></footer>
 
     <script>
         const t=()=>{const s=localStorage.getItem('theme');return s||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light')};
